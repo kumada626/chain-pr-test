@@ -1,0 +1,12 @@
+
+annotations:
+  screwdriver.cd/chainPR: true
+shared:
+  image: node:14
+  steps:
+    - check: echo $PR_BRANCH_NAME
+jobs:
+  first:
+    requires: [ ~pr, ~commit ]
+  second:
+    requires: first
