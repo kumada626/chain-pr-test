@@ -1,2 +1,2 @@
 # chain-pr-test
-with-sla
+with-slash
